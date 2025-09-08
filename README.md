@@ -1,8 +1,7 @@
-# Lab Authentication API
-
-A standalone authentication API built with **Express.js** and **MySQL**.  
-Implements secure authentication using **bcrypt password hashing** and **JSON Web Tokens (JWT)**.  
-Features include **Signup**, **Login**, **Logout (token revocation)**, and a protected **/profile** endpoint.  
+# Lab-Authentication API
+- A standalone authentication API built with **Express.js** and **MySQL**.  
+- Implements secure authentication using **bcrypt password hashing** and **JSON Web Tokens (JWT)**.  
+- Features include **Signup**, **Login**, **Logout (token revocation)**, and a protected **/profile** endpoint.  
 
 ## Project Overview
 This project demonstrates secure authentication in Node.js with MySQL as the database.  
