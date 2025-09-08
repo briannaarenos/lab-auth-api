@@ -7,7 +7,7 @@ Features include **Signup**, **Login**, **Logout (token revocation)**, and a pro
 ## Project Overview
 This project demonstrates secure authentication in Node.js with MySQL as the database.  
 - Passwords are stored as **bcrypt hashes**, never in plain text.  
-- JWT is used for authentication, with token revocation supported via a `revoked_tokens` table.  
+- JWT is used for authentication, with token revocation supported via a **revoked_tokens** table.  
 - Includes middleware for verifying and protecting routes.  
 - Fully tested with Postman.  
 
@@ -54,10 +54,8 @@ CREATE TABLE revoked_tokens (
 );
 
 ### 5. Run the Server
-npm run dev
-
-If successful, you should see:
-
+- npm run dev
+- If successful, you should see:
 🚀 Server running at http://localhost:3000
 ✅ MySQL connected
 
@@ -80,7 +78,6 @@ Protected Route
   Headers: Authorization: Bearer <token>
 
 Testing
-
 - Use Postman with a saved environment variable:
 - baseUrl = http://localhost:3000/api
 - token = <set after login>
