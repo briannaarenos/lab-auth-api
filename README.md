@@ -4,16 +4,12 @@ A standalone authentication API built with **Express.js** and **MySQL**.
 Implements secure authentication using **bcrypt password hashing** and **JSON Web Tokens (JWT)**.  
 Features include **Signup**, **Login**, **Logout (token revocation)**, and a protected **/profile** endpoint.  
 
----
-
 ## Project Overview
 This project demonstrates secure authentication in Node.js with MySQL as the database.  
 - Passwords are stored as **bcrypt hashes**, never in plain text.  
 - JWT is used for authentication, with token revocation supported via a `revoked_tokens` table.  
 - Includes middleware for verifying and protecting routes.  
 - Fully tested with Postman.  
-
----
 
 ## Setup Instructions
 
