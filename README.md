@@ -81,13 +81,13 @@ Testing
 - baseUrl = http://localhost:3000/api
 - token = <set after login>
 
-### Typical flow to test
+## Typical flow to test
 - Signup → POST /auth/signup
 - Login → POST /auth/login → Save JWT as token
 - Access profile → GET /profile with Authorization: Bearer {{token}}
 - Logout → POST /auth/logout
 - Retry profile → Expect 401 Unauthorized (token revoked)
 
-### Notes
+## Notes
 - Never commit your .env file. Always use .env.example for sharing.
 - Ensure node_modules/ and .env are listed in .gitignore.
