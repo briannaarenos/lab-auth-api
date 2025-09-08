@@ -67,17 +67,17 @@ Health Check
 
 Authentication
 - POST /api/auth/signup → Register a new user
-- Body: { "email": "user1@example.com", "password": "Pass@1234", "full_name": "User One", "role": "student" }
+  Body: { "email": "user1@example.com", "password": "Pass@1234", "full_name": "User One", "role": "student" }
   
 - POST /api/auth/login → Login and receive JWT
-- Body: { "email": "user1@example.com", "password": "Pass@1234" }
+  Body: { "email": "user1@example.com", "password": "Pass@1234" }
 
 - POST /api/auth/logout → Logout (revoke token)
-- Headers: Authorization: Bearer <token>
+  Headers: Authorization: Bearer <token>
 
 Protected Route
 - GET /api/profile → Get user profile (requires JWT)
-- Headers: Authorization: Bearer <token>
+  Headers: Authorization: Bearer <token>
 
 Testing
 
@@ -93,7 +93,5 @@ Testing
 - Retry profile → Expect 401 Unauthorized (token revoked)
 
 ### Notes
-
 - Never commit your .env file. Always use .env.example for sharing.
-
 - Ensure node_modules/ and .env are listed in .gitignore.
