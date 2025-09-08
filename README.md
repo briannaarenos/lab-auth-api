@@ -15,11 +15,11 @@ This project demonstrates secure authentication in Node.js with MySQL as the dat
 
 ### 1. Clone Repository
 git clone https://github.com/<your-username>/lab-auth-api.git
-cd lab-auth-api
+cd `lab-auth-api`
 ### 2. Install Dependencies
 npm install
 ### 3. Configure Environment
-Create a .env file in the root directory (use .env.example as a template):
+Create a `.env` file in the root directory (use .env.example as a template):
 
 DB_HOST=localhost
 DB_USER=root
@@ -85,7 +85,7 @@ Testing
 - baseUrl = http://localhost:3000/api
 - token = <set after login>
 
-### Typical flow to test:
+### Typical flow to test
 - Signup → POST /auth/signup
 - Login → POST /auth/login → Save JWT as token
 - Access profile → GET /profile with Authorization: Bearer {{token}}
