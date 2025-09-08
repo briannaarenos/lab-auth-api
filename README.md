@@ -13,7 +13,7 @@ This project demonstrates secure authentication in Node.js with MySQL as the dat
 ## Setup Instructions
 
 ### 1. Clone Repository
-- git clone https://github.com/<your-username>/lab-auth-api.git
+- git clone https://github.com/{your-username}/lab-auth-api.git
 - cd lab-auth-api
 ### 2. Install Dependencies
 npm install
